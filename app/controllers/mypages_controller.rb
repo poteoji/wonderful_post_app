@@ -6,7 +6,7 @@ class MypagesController < ApplicationController
   end
 
   def show
-    @articles = Article.where(user_id: current_user).page(params[:page])
+    @articles = Article.where(user_id: current_user).page(params[:page]).search(params[:title])
   end
 
 end

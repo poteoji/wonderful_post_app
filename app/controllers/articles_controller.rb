@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: %i[ show edit update destroy ]
 
   def index
-    @articles = Article.all.page(params[:page])
+    @articles = Article.all.page(params[:page]).search(params[:title])
   end
 
   def show
@@ -54,6 +54,8 @@ class ArticlesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
 
   private
     def set_article
