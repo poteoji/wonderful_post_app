@@ -1,24 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## タイトル
+### WonderfulPostApp
+『記事投稿アプリ』
+<img width="1053" alt="image" src="https://user-images.githubusercontent.com/95083997/168851777-42215ac7-7237-469e-aec3-5b11a9b4b256.png">
 
-Things you may want to cover:
+## 概要
+記事を投稿、編集、削除するためのアプリ
 
-* Ruby version
+## 制作意図
+「実務を見据えたスキルを学習」することを意識して制作しました。 転職前に、「試行錯誤する力」「わからないことを調べる力」「適切な質問ができる力」という自走力を磨くために注力してきました。 具体的には「学習段階では知らない概念や言葉が含まれているような指示をもとに、アプリを作る経験」がそれにあたります。基礎的な学習はやりましたが実務で知らないことがでてきた時にどうやって問題解決できるか、このポートフォリオ作成を通してその練習をしました。 なので、このポートフォリオは私が実際に作って世に出したいというようなアプリではありません。そう言ったアプリは実務を通してスキルアップを図りながら作った方がより深い学習にもなると考えているからです。 ここまでやってきたのはあくまでも「「実務を見据えた学習」」であり、今回のポートフォリオもその一環です。
 
-* System dependencies
+## 使用技術
+- Ruby: 2.7.2
+- Rails: 6.0.3.7
+- Node.js: 15.7.0
+- DB: PostgreSQL
 
-* Configuration
+## 機能一覧
+- 記事一覧機能(トップページ)
+- マイページ(自分が書いた記事の一覧)
+![マイページ](https://user-images.githubusercontent.com/95083997/169059942-53076573-8bc1-468a-bb77-215d8b529dea.gif)
 
-* Database creation
+- ユーザー登録・サインイン/サインアウト
+![ログイン機能](https://user-images.githubusercontent.com/95083997/169061616-63b456eb-d67f-497d-9979-bde3f7a02fef.gif)
 
-* Database initialization
+- 記事の作成・編集・削除
+![記事の作成、編集、削除](https://user-images.githubusercontent.com/95083997/169301818-18590729-02a8-4bf5-bf34-d6705e2969f9.gif)
 
-* How to run the test suite
+- 記事の検索
+![検索](https://user-images.githubusercontent.com/95083997/169303931-3eebca10-1385-4f3b-833b-fda925acb1c2.gif)
 
-* Services (job queues, cache servers, search engines, etc.)
+## ER図
+<img width="611" alt="スクリーンショット 2022-05-18 23 39 33" src="https://user-images.githubusercontent.com/95083997/169068645-7f1851df-4520-4362-9da8-c3744f39b0e3.png">
 
-* Deployment instructions
-
-* ...
