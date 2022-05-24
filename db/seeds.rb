@@ -13,6 +13,7 @@
   )
 end
 
+
 User.find([1]).each do |user|
   50.times do |n|
     user.articles.create!(
@@ -38,5 +39,19 @@ User.find([3]).each do |user|
           title:"No.#{n + 1}:user003の記事",
           content: "No.#{n + 1}:user003の記事の本文"
     )
+  end
+end
+
+Tag.create([
+  { name: "Ruby" },
+  { name: "Rails" },
+  { name: "継続" },
+  { name: "就活"}
+])
+
+
+Article.all.ids.sort.each do |article_id|
+  Tag.all.ids.sort.each do |tag_id|
+    TagArticle.create(article_id: article_id, tag_id: tag_id)
   end
 end
